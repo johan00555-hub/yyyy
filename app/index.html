@@ -1,0 +1,39 @@
+`html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجموعة الأصدقاء</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>👥 مجموعة زبوب</h1>
+            <p class="subtitle">قلاويا</p>
+            
+            <div class="form-group">
+                <input type="text" id="username" placeholder="أدخل اسمك..." autocomplete="off">
+                <button onclick="login()">دخول</button>
+            </div>
+            
+            <p id="error" class="error"></p>
+            
+            <div class="allowed-names">
+                <p>الأسماء المسموحة:</p>
+                <span class="name-tag">أيوب</span>
+                <span class="name-tag">ميس</span>
+                <span class="name-tag">ريان</span>
+                <span class="name-tag">جبار</span>
+                <span class="name-tag">عبدالله</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/tracker.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
